@@ -48,7 +48,7 @@ const formatAirQualityOutput = (airQualityData) => {
     `;
 };
 
-app.get('/anime-hello', async (req, res) => {
+app.get('/air-quality', async (req, res) => {
   const airQualityData = await getAirQualityData();
   res.send(formatAirQualityOutput(airQualityData));
 });
